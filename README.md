@@ -1,4 +1,4 @@
-# json-proxy
+# json-filter
 
 A high-performance web server that parses the JSON payload and redirects requests to a different server.
 
