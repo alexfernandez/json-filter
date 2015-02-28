@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/alexfernandez/json-filter",
 	"contributors": ["Alejandro Fernandez <alex.fernandez@mediasmart.es>"],
 	"license": "MIT",
-	"main": "test.js",
+	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/alexfernandez/json-filter"
