@@ -1,0 +1,31 @@
+{
+	"name": "json-filter",
+	"version": "0.0.1",
+	"description": "A high-performance web server that parses the JSON payload and redirects requests to a different server.",
+	"homepage": "https://github.com/alexfernandez/json-filter",
+	"contributors": ["Alejandro Fernandez <alex.fernandez@mediasmart.es>"],
+	"license": "MIT",
+	"main": "test.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexfernandez/json-filter"
+	},
+	"dependencies": {
+		"testing": "*",
+		"stdio": "*",
+		"microprofiler": "*",
+		"log": "*",
+		"prototypes": "*"
+	},
+	"devDependencies": {
+		"jshint": "*"
+	},
+	"engines": {
+		"node": ">=0.10.25 <1.4.0"
+	},
+	"scripts": {
+		"test": "node test.js"
+	},
+	"os" : [ "!win32" ],
+	"private": false
+}
