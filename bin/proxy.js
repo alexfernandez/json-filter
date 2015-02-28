@@ -50,6 +50,8 @@ function processArgs()
 
 function start(options)
 {
+	options.passRequest = function() {return true;};
+	options.passResponse = function() {return true;};
 	proxy.start(options, function(error)
 	{
 		if (error)
