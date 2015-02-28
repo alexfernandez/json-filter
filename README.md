@@ -80,9 +80,9 @@ The message has the following attributes:
 * `json`: if the MIME type of the request is `application/json`,
 this attribute will contain the parsed JSON.
 
-## Usage
+## Binary Usage
 
-The JSON filter can be started using binary commands.
+The JSON filter can be started using binary scripts.
 As before, frst run `npm install` to get all dependencies:
 
     $ npm install
