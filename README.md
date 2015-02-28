@@ -87,7 +87,7 @@ As before, frst run `npm install` to get all dependencies:
 
     $ npm install
 
-Then try starting the noContent server and the JSON filter server from two different consoles:
+Then try starting the `noContent` server and the JSON `filter` server from two different consoles:
 
     $ node bin/noContent.js
     $ node bin/filter.js
