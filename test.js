@@ -2,7 +2,7 @@
 
 /**
  * Run tests.
- * (C) 2013 MediaSmart Mobile.
+ * (C) 2015 MediaSmart Mobile.
  */
 
 // requires
