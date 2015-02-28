@@ -22,7 +22,7 @@ exports.test = function(callback)
 	var tests = {};
 	var libs = [
 		'./lib/noContent.js',
-		'./lib/proxy.js',
+		'./lib/filter.js',
 		'./lib/analysis.js',
 	];
 	libs.forEach(function(lib)

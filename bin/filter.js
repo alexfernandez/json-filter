@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * Binary to run a proxy.
+ * Binary to run a JSON filter.
  * (C) 2015 MediaSmart Mobile.
  */
 
@@ -10,7 +10,7 @@
 var cluster = require('cluster');
 var stdio = require('stdio');
 var Log = require('log');
-var proxy = require('../lib/proxy.js');
+var filter = require('../lib/filter.js');
 
 // globals
 var log = new Log();
@@ -29,7 +29,7 @@ processArgs();
 function processArgs()
 {
 	var options = stdio.getopt({
-		port: {key: 'p', args: 1, description: 'port to run the proxy server on', default: PORT},
+		port: {key: 'p', args: 1, description: 'port to run the filter server on', default: PORT},
 		destination: {key: 'd', args: 1, description: 'destination as server:port', default: 'localhost:55500'},
 		cluster: {key: 'c', description: 'start in cluster mode'},
 	});
@@ -52,13 +52,13 @@ function start(options)
 {
 	options.passRequest = function() {return true;};
 	options.passResponse = function() {return true;};
-	proxy.start(options, function(error)
+	filter.start(options, function(error)
 	{
 		if (error)
 		{
-			return log.error('Could not start proxy server: %s', error);
+			return log.error('Could not start filter server: %s', error);
 		}
-		log.notice('Proxy listening on port %s', options.port);
+		log.notice('JSON filter listening on port %s', options.port);
 	});
 }
 

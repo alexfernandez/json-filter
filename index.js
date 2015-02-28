@@ -6,8 +6,8 @@
  */
 
 // requires
-var proxy = require('./lib/proxy.js');
+var filter = require('./lib/filter.js');
 
 
-exports.start = proxy.start;
+exports.start = filter.start;
 
