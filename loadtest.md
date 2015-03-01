@@ -53,14 +53,14 @@ The average krps is rounded to the first decimal.
 |------|----------------|--------|--------|
 |local |Node.js v0.10.36|5.3 krps|7.2 krps|
 |local |Node.js v0.12   |5.1 krps|7.7 krps|
-|local |io.js v1.4.1    |4.3 krps|7.6 krps|
+|local |io.js v1.4.1    |4.3 krps|8.0 krps|
 
 The "local" server is a rather puny Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz,
 with two cores. Operating system is Debian testing.
 The JSON filter is tested using the fastest backend (which is currently io.js),
 set to 30 ms delay.
 Local results are a bit noisy: e.g. the cluster results for io.js v1.4.1 range
-from 6.8 to 7.7 krps with no apparent change in the server load.
+from 6.8 to 8.0 krps with no apparent change in the server load.
 
 |server|engine          |1 core  |cluster |
 |------|----------------|--------|--------|
